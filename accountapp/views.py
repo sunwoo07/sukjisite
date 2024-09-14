@@ -6,4 +6,4 @@ def helloworld(request):
     return HttpResponse('Helloworld')
 
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'accountapp/login.html')
