@@ -1,0 +1,13 @@
+<!-- templates/board/post_form.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% if form.instance.pk %}게시글 수정{% else %}새 게시글 작성{% endif %}</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">저장</button>
+    <a href="{% url 'post_list' %}" class="btn btn-secondary">취소</a>
+</form>
+{% endblock %}
