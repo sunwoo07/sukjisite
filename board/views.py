@@ -34,3 +34,4 @@ class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
     template_name = 'board/post_confirm_delete.html'
     success_url = reverse_lazy('post_list')
+

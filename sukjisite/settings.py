@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'accountapp',
     'mainpage',
     'board',
+    'accounts',
 ]
 
 MIDDLEWARE = [
