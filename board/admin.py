@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from board.models import Post, Comment
+
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author')
+
+
+admin.site.register(Post, PostAdmin)

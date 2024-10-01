@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def mainpage(request):
+    return render(request, 'mainpage/mainpage.html')
+
+def privacypolicy(request):
+    return render(request, 'mainpage/privacy_policy.html')
